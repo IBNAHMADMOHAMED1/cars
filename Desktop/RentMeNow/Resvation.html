@@ -68,10 +68,10 @@
         <div class="bg-gallery">
             <img class="home-parallax" src="./image/home-img.png" alt="">
         </div>
-        <h1 class="heading"><span>Book</span>Now</h1>
+       
     </section>
 
-
+    <h1 class="heading"><span>Book</span>Now</h1>
     <!--  -->
     <div class="rervation">
         <div class="Box_all">
@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="slt Stl_boite_av">
-                        <label class="title">Boite a vitesse</label>
+                        <label class="title">Gear box</label>
                         <select class="inp" id="boite_av" onchange="chekBoite()">
                             <option>choice a option</option>
                         </select>
@@ -106,13 +106,13 @@
                     </div>
 
                     <div class="slt Stl_Number_Of_Days">
-                        <label class="title">Reservation duration</label>
+                        <label class="title">Reservation Duration</label>
                         <input class="inp" type="text" name="Number_Of_Days" id="Number_Of_Days" required minlength="1"
                             maxlength="6" size="10">
 
                     </div>
                     <div class="slt Stl_totale">
-                        <label class="title">Totale d'estimation</label>
+                        <label class="title">Total estimate</label>
                         <div> <input id="BottonCalculate" type="button" id="btn" value="confirmed"></div><br>
                         <input class="inp" type="text" disabled value="" id="Total_Amount" />
                     </div>
@@ -125,7 +125,7 @@
                                 <i class="fas fa-lock"></i>
                             </span>
                         </div>
-                        <p class="mbs">Paiement 100% sécurisé</p>
+                        <p class="mbs">100% secure payment</p>
                     </div>
                     <div class="block-payment__visuel">
                         <img src="./image/methodepayment.png" alt="" class="carte">
@@ -286,7 +286,7 @@
 
         </div>
 
-        <div class="credit"> created by <span class="created" style="color:#bf307f">Ibna</span>hmed Mohamed | all rights
+        <div  class="credit"> created by <i herf="" class="fab fa-instagram"> Ibnahmed Mohamed</i> | all rights
             reserved </div>
 
     </section>
@@ -372,14 +372,11 @@
 
 
         function calcul() {
-            var n = document.getElementById("Number_Of_Days").value;
-            totale = n * (prix + (prix * carburant) + (prix * GearBox)) + " $";
-            document.getElementById("Total_Amount").value = totale;
-            // if(totale==0){
-            //  let ch =document.getElementById("Total_Amount").innerHTML = "kjs";
-            //     console.log(ch);
-            // }
+            var NomberDay = document.getElementById("Number_Of_Days").value;
             
+            totale = NomberDay * (prix + (prix * carburant) + (prix * GearBox)) + " $";
+           
+            document.getElementById("Total_Amount").value = totale;    
         }
 
         document.getElementById("BottonCalculate").addEventListener("click", calcul);

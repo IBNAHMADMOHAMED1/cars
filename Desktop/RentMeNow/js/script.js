@@ -30,51 +30,17 @@ window.onscroll = () =>{
 
 
 
-document.querySelector('.home').onmouseleave = (e) =>{
-
-  document.querySelectorAll('.home-parallax').forEach(elm =>{
-
-    elm.style.transform = `translateX(0px) translateY(0px)`;
-
-  });
-
-};
-
-var swiper = new Swiper(".vehicles-slider", {
-  grabCursor: true,
-  centeredSlides: true,  
-  spaceBetween: 20,
-  loop:true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable:true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
+// 
 
 var swiper = new Swiper(".featured-slider", {
   grabCursor: true,
   centeredSlides: true,  
   spaceBetween: 20,
   loop:true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 9500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable:true,
@@ -97,10 +63,10 @@ var swiper = new Swiper(".review-slider", {
   centeredSlides: true,  
   spaceBetween: 20,
   loop:true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 9500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable:true,
